@@ -4,12 +4,13 @@ public class Main {
 
         Programas programa1 = new Programas(14, 450, 2, 3);
         Programas programa2 = new Programas(8, 600, 2, 3);
-        Programas programa3 = new Programas(8, 300, 2, 2);
+        Programas programa3 = new Programas(8, 300, 2, 3);
 
         SistemaOperacional sistemaOperacional = new SistemaOperacional(computador);
 
-        System.out.println("Teste 1");
         sistemaOperacional.executarPrograma(programa1);
+        sistemaOperacional.executarPrograma(programa2);
+        sistemaOperacional.executarPrograma(programa3);
         
     }
     
