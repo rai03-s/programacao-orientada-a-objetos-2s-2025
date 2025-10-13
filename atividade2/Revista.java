@@ -13,11 +13,11 @@ public class Revista extends Material {
         this.edicao = edicao;
     }
 
-    
+    @Override
     public void descricao(){
-        System.out.println("Título: " +getTitulo());
-        System.out.println("Ano: "+getAnoPublicacao());
-        System.out.println("Edição: " +getEdicao());
+        System.out.println("Título: " + this.getTitulo());
+        System.out.println("Ano: "+ this.getAnoPublicacao());
+        System.out.println("Edição: " + this.edicao);
     }
     
 }

@@ -10,12 +10,45 @@ public class Emprestimo {
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
+
+    public Pessoa getPessoa() {
+        return this.pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public Material getMaterial() {
+        return this.material;
+    }
+
+    public void setMaterial(Material material) {
+        this.material = material;
+    }
+
+    public String getDataEmprestimo() {
+        return this.dataEmprestimo;
+    }
+
+    public void setDataEmprestimo(String dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+    public String getDataDevolucao() {
+        return this.dataDevolucao;
+    }
+
+    public void setDataDevolucao(String dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
+    }
+
     public void exibirDetalhes(){
-        System.out.println("Data do Empréstimo: " +dataEmprestimo);
-        System.out.println("Data de Devolução: " +dataDevolucao);
-        System.out.println("Dados da pessoa: ");
-        pessoa.exibirInfo();
-        System.out.println("Dados do material: ");
-        material.descricao();
+        System.out.println("Data do Empréstimo: " +this.dataEmprestimo);
+        System.out.println("Data de Devolução: " +this.dataDevolucao);
+        System.out.println("Dados da pessoa vinculada: ");
+        this.pessoa.exibirInfo();
+        System.out.println("Dados do material vinculado: ");
+        this.material.descricao();
     }
 }
