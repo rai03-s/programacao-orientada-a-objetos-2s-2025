@@ -1,30 +1,30 @@
 public class Emprestimo {
-    private Pessoa pessoa;
-    private Material material;
+    private TomadorEmprestimo tomadorEmprestimo;
+    private ItemEmprestado itemEmprestado;
     private String dataEmprestimo;
     private String dataDevolucao;
     
-    public Emprestimo(Pessoa pessoa, Material material, String dataEmprestimo, String dataDevolucao){
-        this.pessoa = pessoa;
-        this.material = material;
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material primeiro, String dataEmprestimo, String dataDevolucao){
+        this.tomadorEmprestimo = tomadorEmprestimo;
+        this.itemEmprestado = primeiro;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
 
-    public Pessoa getPessoa() {
-        return this.pessoa;
+    public TomadorEmprestimo getTomadorEmprestimo() {
+        return this.tomadorEmprestimo;
     }
 
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
+    public void setTomadorEmprestimo(TomadorEmprestimo tomadorEmprestimo) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
     }
 
-    public Material getMaterial() {
-        return this.material;
+    public ItemEmprestado getItemEmprestado() {
+        return this.itemEmprestado;
     }
 
-    public void setMaterial(Material material) {
-        this.material = material;
+    public void setItemEmprestado(ItemEmprestado itemEmprestado) {
+        this.itemEmprestado = itemEmprestado;
     }
 
     public String getDataEmprestimo() {
@@ -46,9 +46,9 @@ public class Emprestimo {
     public void exibirDetalhes(){
         System.out.println("Data do Empréstimo: " +this.dataEmprestimo);
         System.out.println("Data de Devolução: " +this.dataDevolucao);
-        System.out.println("Dados da pessoa vinculada: ");
-        this.pessoa.exibirInfo();
-        System.out.println("Dados do material vinculado: ");
-        this.material.descricao();
+        System.out.println("Dados da tomadorEmprestimo vinculada: ");
+        this.tomadorEmprestimo.exibirInfo();
+        System.out.println("Dados do itemEmprestado vinculado: ");
+        this.itemEmprestado.descricao();
     }
 }
