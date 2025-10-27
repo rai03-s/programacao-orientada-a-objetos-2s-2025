@@ -4,9 +4,9 @@ public class Emprestimo {
     private String dataEmprestimo;
     private String dataDevolucao;
     
-    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material primeiro, String dataEmprestimo, String dataDevolucao){
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, ItemEmprestado itemEmprestado, String dataEmprestimo, String dataDevolucao){
         this.tomadorEmprestimo = tomadorEmprestimo;
-        this.itemEmprestado = primeiro;
+        this.itemEmprestado = itemEmprestado;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
