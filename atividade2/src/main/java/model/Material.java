@@ -1,4 +1,7 @@
-public abstract class Material implements ItemEmprestado {
+package src.main.java.model;
+import src.main.java.interfaces.ItemEmprestavel;
+
+public abstract class Material implements ItemEmprestavel {
     private String titulo;
     private Integer anoPublicacao;
 

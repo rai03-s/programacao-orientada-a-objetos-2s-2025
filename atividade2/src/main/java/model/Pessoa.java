@@ -1,3 +1,6 @@
+package src.main.java.model;
+import src.main.java.interfaces.TomadorEmprestimo;
+
 public abstract class Pessoa implements TomadorEmprestimo {
     private String nome;
     private String email;

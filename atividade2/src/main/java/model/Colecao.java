@@ -1,4 +1,7 @@
-public class Colecao implements ItemEmprestado {
+package src.main.java.model;
+import src.main.java.interfaces.ItemEmprestavel;
+
+public class Colecao implements ItemEmprestavel {
     private String proprietario;
     private String qtItens;
 

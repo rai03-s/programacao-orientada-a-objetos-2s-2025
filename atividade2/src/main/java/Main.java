@@ -1,5 +1,16 @@
+package src.main.java;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import src.main.java.model.Colecao;
+import src.main.java.model.Emprestimo;
+import src.main.java.model.Funcionario;
+import src.main.java.model.Instituicao;
+import src.main.java.model.Livro;
+import src.main.java.model.Material;
+import src.main.java.model.Pessoa;
+import src.main.java.model.Revista;
+import src.main.java.model.Usuario;
 
 public class Main {
     public static void main(String[] args) {
